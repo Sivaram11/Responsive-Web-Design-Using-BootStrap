@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> BootStrap Example </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta author="Sivaram">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	.navbar{
+		margin-bottom:0;
+		border-radius:0;
+		background-color:#5E4485;
+		color:#FFF;
+		padding: 1% 0;
+		font-size:1.2em;
+		border:0
+	}
+	.navbar-brand{
+		float:left;
+		min-height:55px;
+		paddding:0 15px 15px 
+	}
+	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .active a:hover{
+		color:#FFF;
+		background-color:#5E4485;
+	}	
+	.navbar-inverse .navbar-nav li a{
+		color:#D5D5D5;
+	}
+	.carousel-caption{
+		top:50%;
+		transform:translateY(-50%);
+		text-transform:uppercase;
+	}
+	.btn{
+		font-size:18px;
+		color:#FFF;
+		padding:12px 22px;
+		background:#5E4485;
+		border:2px solid #FFF;
+		margin-top:75px
+	}
+	.scaledown{
+		object-fit:scale-down;
+	}
+	@media (max-width:600px){
+		.carousel-caption{
+			display:none;
+		}
+	}
+	#icon{
+		max-width:250px;
+	}
+	.container{
+		margin:4% auto
+	}
+	footer{
+		width:100%;
+		background-color:#5E4485;
+		padding:5%;
+		color:#FFF
+	}
+	.fab{
+		padding:20px;
+		font-size:30px;
+		color:#FFF
+	}
+	.fab:hover{
+		color:#0000FF;
+		text-decoration:none
+	}
+	.name{
+		font-size:30px;
+		font-family:TimesNewRoman
+	}
+	</style>
+</head>
+<body>
+	<!--- Collapsible Navigation Bar --->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<p class="navbar name"> SoccerNet Teams </p>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 	
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#"> Brasil </a></li>
+					<li><a href="#"> Argentina </a></li>
+					<li><a href="#"> Portugal </a></li>
+					<li><a href="#"> France </a></li>
+					<li><a href="#"> England </a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	<!--- Carousel Image Slider --->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators"> 
+				<li data-target="#myCarousel" data-slide-to="0" class="active"><li>
+				<li data-target="#myCarousel" data-slide-to="1"><li>
+				<li data-target="#myCarousel" data-slide-to="2"><li>
+			</ol>
+			<!--- Wrapper for Slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="scale-down " style="height:325px;width:1375px" src="https://i.pinimg.com/originals/c3/90/69/c39069ec299d45e166f7152e2cb6265a.jpg" >
+					<div class="carousel-caption">
+					<br>
+						<button type="button" class="btn btn-default"> Get Started </button>
+					</div>
+				</div> <!--- End active --->
+				<div class="item">
+					<img class="scale-down" style="height:325px;width:1375px" src="http://www.nationmultimedia.com/img/news/2018/04/27/30344154/8e4b9621408cfdd04157444c41133b7f.jpeg">
+				</div>
+				<div class="item">
+					<img class="scale-down" style="height:325px;width:1375px" src="https://i.ytimg.com/vi/z4aas4q-tOg/maxresdefault.jpg	">
+				</div>
+			</div>
+			<!--- Start Slider Controls ---> 
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only"> Previous </span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only"> Next </span>
+			</a>
+		</div> <!---End of Image Slider--->
+		 <div class="container text-center">
+			<h2> Favourites of the Season </h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="scale-down" style="width:300px;height:150px" src="http://as01.epimg.net/en/imagenes/2018/03/04/football/1520180124_449729_noticia_normal.jpg" id="icon">
+					<h4> Messi </h4>
+				</div>
+				<div class="col-sm-4">
+					<img class="scale-down" style="width:300px;height:150px" src="http://e0.365dm.com/18/05/16-9/20/skysports-cristiano-ronaldo_4321745.jpg?20180527100231" id="icon">
+					<h4> Ronaldo </h4>
+				</div>
+				<div class="col-sm-4">
+					<img class="scale-down" style="width:300px;height:150px" src="https://www.theepochtimes.com/assets/uploads/2014/06/78c52ea838fd6319580f6a706700b43b2-700x420.jpg" id="icon">
+					<h4> Neymar </h4>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h4> About Football </h4>
+					<p> Football is a family of team sports that involve, 
+						to varying degrees, kicking a ball with a foot to score a goal.
+						Unqualified, the word football is understood to refer to whichever form of football is the most popular in the regional context in which the word appears.
+						Sports commonly called football in certain places include association football (known as soccer in some countries); 
+						gridiron football (specifically American football or Canadian football); Australian rules football;
+						rugby football (either rugby league or rugby union); and Gaelic football.[1][2] 
+						These different variations of football are known as football codes. 
+					</p>
+					<p> There are a number of references to traditional, ancient, or prehistoric ball games played by indigenous peoples in many different parts of the world.[3][4][5] Contemporary codes of football can be traced back to the codification of these games at English public schools during the nineteenth century </p>
+				</div>
+				<div class="col-md-6">
+					<img class="scale-down img-responsive" style="width:725px;height:300px" src="https://media.pri.org/s3fs-public/styles/story_main/public/story/images/the-ball-488700_1920_crop.jpg?itok=jtR0TNCa">
+				</div>
+			</div>
+		</div> 
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4> First FIFA World Cup </h4>
+					<p> 1930 FIFA World Cup1er Campeonato Mundial de Fútbol Poster in Art Deco style, depicting a simplified figure of a goalkeeper making a save in its upper half. The lower half contains writing in a heavily stylised font: "1er Campeonato Mundial de Futbol" in black, and "Uruguay 1930 Montevideo 15 Julio Agosto 15" in white and orange.Official poster
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+					<img class="scale-down img-responsive" style="width:725px;height:300px" src="https://image.slidesharecdn.com/brazil2014iconicworldcupmoments-140525025435-phpapp02/95/brazil-2014-iconic-world-cup-moments-5-638.jpg?cb=1401110955">
+				</div> 
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4> 2014 FIFA World Cup </h4>
+					<p> The 2014 FIFA World Cup was the 20th FIFA World Cup, the quadrennial world championship for men's national football teams organized by FIFA. It took place in Brazil from 12 June to 13 July 2014, after the country was awarded the hosting rights in 2007. It was the second time that Brazil staged the competition </p>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+					<img class="scale-down img-responsive" style="width:725px;height:300px" src="http://shirishgupta.com/wp-content/uploads/2014/07/Germany-Win.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h4><a href="#hidden" data-toggle="collapse" > Want to know more about football? </a></h4>
+				<div id="hidden" class="collapse">
+					<p> In the final, Germany defeated Argentina 1–0 to win the tournament and secure the country's fourth world title, the first after the German reunification in 1990, when as West Germany they also beat Argentina in the World Cup final. Germany became the first European team to win a World Cup staged in the Americas,[8] and this result marked the first time that nations from the same continent won three consecutive tournaments</p>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3> Contact Us </h3>
+					<br>
+					<h4> Our address and contact info here. </h4>
+				</div>
+				<div class="col-sm-4">
+					<h3> Connect </h3>
+					<a href="#" class="fab fa-facebook-f" ></a>
+					<a href="#" class="fab fa-twitter" ></a>
+					<a href="#" class="fab fa-google" ></a>
+					<a href="#" class="fab fa-linkedin" ></a>
+					<a href="#" class="fab fa-instagram" ></a>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>
